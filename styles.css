@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(45deg, #e1ded9, #a9c4c4, #e4b55d);
+    background-size: 300% 300%;
+    animation: gradientBG 6s infinite alternate;
+    color: #000435;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    transition: transform 0.3s ease-in-out, opacity 0.5s;
+}
+
+.button {
+    background-color: #004466;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .button:hover,
+    .button.active {
+        background-color: #e4b55d;
+        color: #004466;
+    }
+
+    .button:active {
+        transform: scale(0.9);
+    }
+
+.activity-container {
+    perspective: 1000px;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+}

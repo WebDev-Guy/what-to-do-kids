@@ -5,170 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What to Do?</title>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2/tsparticles.confetti.bundle.min.js"></script>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            background: linear-gradient(45deg, #e1ded9, #a9c4c4, #e4b55d);
-            background-size: 300% 300%;
-            animation: gradientBG 6s infinite alternate;
-            color: #000435;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        @keyframes gradientBG {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            100% {
-                background-position: 100% 50%;
-            }
-        }
-
-        h1 {
-            font-size: 48px;
-            transition: transform 0.3s ease-in-out, opacity 0.5s;
-        }
-
-        .button {
-            background-color: #004466;
-            color: white;
-            font-size: 24px;
-            padding: 20px;
-            border-radius: 50%;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-            width: 120px;
-            height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: background-color 0.3s ease, transform 0.2s;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .button:hover,
-        .button.active {
-            background-color: #e4b55d;
-        }
-
-        .button:active {
-            transform: scale(0.9);
-        }
-
-        .activity-container {
-            perspective: 1000px;
-        }
-
-        .flip {
-            transform: rotateY(180deg);
-            transition: transform 0.6s;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="activity-container">
         <h1 id="activity">Click the button to choose an activity!</h1>
     </div>
-    <button class="button" id="activityButton" onclick="pickActivity()">Pick</button>
+    <button type="button" class="button" id="activityButton" onclick="pickActivity()">Pick</button>
 
-    <script>
-        const activities = [
-            { text: "Read a book", emoji: "📖", probability: 8 },
-            { text: "Go to the park", emoji: "🌳", probability: 4 },
-            { text: "Play a board game", emoji: "🎲", probability: 7 },
-            { text: "Draw something", emoji: "🎨", probability: 5 },
-            { text: "Watch tv", emoji: "📺", probability: 2 },
-            { text: "Build a fort", emoji: "🏰", probability: 2 },
-            { text: "Go get ice cream", emoji: "🍦", probability: 1 },
-            { text: "Play basketball", emoji: "🏀", probability: 4 },
-            { text: "Playdough", emoji: "🖐️", probability: 6 },
-            { text: "Play catch", emoji: "⚾", probability: 5 },
-            { text: "Clean up toys", emoji: "🧸", probability: 4 },
-            { text: "Play outside", emoji: "🌞", probability: 7 },
-            { text: "Have a snack", emoji: "🍎", probability: 5 },
-            { text: "Walk the dog", emoji: "🐶", probability: 7 },
-            { text: "Build with Lego", emoji: "🧱", probability: 7 },
-            { text: "Play with Barbies", emoji: "👗", probability: 4 },
-            { text: "Coloring pages", emoji: "🖍️", probability: 7 },
-            { text: "Make paper airplanes", emoji: "✈️", probability: 7 },
-            { text: "Computer learning games", emoji: "💻", probability: 3 },
-            { text: "Tablet time", emoji: "📱", probability: 2 },
-            { text: "Paint", emoji: "🖌️", probability: 4 },
-            { text: "Do an art project", emoji: "🎭", probability: 4 },
-            { text: "Nerf guns", emoji: "🔫", probability: 4 },
-            { text: "Sew something", emoji: "🧵", probability: 5 },
-            { text: "Clean your room", emoji: "🧹", probability: 4 },
-            { text: "Jumping park", emoji: "🤸", probability: 1 },
-            { text: "Watch a movie", emoji: "🎬", probability: 3 },
-            { text: "Quiet time", emoji: "🤫", probability: 5 },
-            { text: "Arcade", emoji: "🕹️", probability: 1 },
-            { text: "Go get a pretzel", emoji: "🥨", probability: 1 },
-            { text: "Gymnastics", emoji: "🤸‍♀️", probability: 5 },
-            { text: "Look at family photos", emoji: "🖼️", probability: 4 },
-            { text: "Clean baseboards", emoji: "🧽", probability: 2 },
-            { text: "Clean basement", emoji: "🏚️", probability: 2 },
-            { text: "Drink some water", emoji: "💧", probability: 7 },
-            { text: "Play with hotwheels cars", emoji: "🚗", probability: 7 },
-            { text: "Sports outside", emoji: "⚽", probability: 5 },
-            { text: "Call Grandparents", emoji: "📞", probability: 3 },
-            { text: "Tea Party", emoji: "🍵", probability: 3 },
-            { text: "Clean up garage", emoji: "🛠️", probability: 1 },
-            { text: "Draw with chalk", emoji: "🖍️", probability: 5 },
-            { text: "Reading roll", emoji: "📚", probability: 7 },
-            { text: "Word search", emoji: "🔠", probability: 7 },
-            { text: "Maze", emoji: "🌀", probability: 7 },
-            { text: "Practice math sheets", emoji: "➕", probability: 7 }
-        ];
-
-        function pickActivity() {
-            let weightedList = [];
-
-            activities.forEach(activity => {
-                for (let i = 0; i < activity.probability; i++) {
-                    weightedList.push(activity);
-                }
-            });
-
-            const randomIndex = Math.floor(Math.random() * weightedList.length);
-            const selectedActivity = weightedList[randomIndex];
-
-            const activityElement = document.getElementById("activity");
-            activityElement.classList.add("flip");
-            setTimeout(() => {
-                activityElement.innerText = `${selectedActivity.text} ${selectedActivity.emoji}`;
-                activityElement.classList.remove("flip");
-            }, 300);
-
-            launchConfetti();
-        }
-
-        function launchConfetti() {
-            confetti({
-                particleCount: 100,
-                spread: 160,
-                origin: { y: 0.6 }
-            });
-        }
-
-        document.addEventListener("keydown", function (event) {
-            if (event.code === "Space") {
-                const button = document.getElementById("activityButton");
-                button.classList.add("active");
-                pickActivity();
-                setTimeout(() => button.classList.remove("active"), 300);
-            }
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2/tsparticles.confetti.bundle.min.js"></script>
+    <script src="activities.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
