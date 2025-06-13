@@ -226,5 +226,255 @@ const activities = [
         "text": "Practice math sheets",
         "emoji": "➕",
         "probability": 7
+    },
+    {
+        "text": "Make slime",
+        "emoji": "🟢",
+        "probability": 3
+    },
+    {
+        "text": "Create a treasure hunt",
+        "emoji": "🗺️",
+        "probability": 6
+    },
+    {
+        "text": "Learn magic tricks",
+        "emoji": "🎩",
+        "probability": 5
+    },
+    {
+        "text": "Make friendship bracelets",
+        "emoji": "💎",
+        "probability": 5
+    },
+    {
+        "text": "Science experiment",
+        "emoji": "🧪",
+        "probability": 6
+    },
+    {
+        "text": "Dance party",
+        "emoji": "💃",
+        "probability": 6
+    },
+    {
+        "text": "Learn origami",
+        "emoji": "📄",
+        "probability": 5
+    },
+    {
+        "text": "Grow a plant from seed",
+        "emoji": "🌱",
+        "probability": 6
+    },
+    {
+        "text": "Make homemade pizza",
+        "emoji": "🍕",
+        "probability": 4
+    },
+    {
+        "text": "Create a comic book",
+        "emoji": "📚",
+        "probability": 5
+    },
+    {
+        "text": "Play restaurant",
+        "emoji": "🍽️",
+        "probability": 6
+    },
+    {
+        "text": "Build a birdhouse",
+        "emoji": "🏠",
+        "probability": 4
+    },
+    {
+        "text": "Make music with kitchen items",
+        "emoji": "🥄",
+        "probability": 6
+    },
+    {
+        "text": "Create shadow puppets",
+        "emoji": "🤲",
+        "probability": 5
+    },
+    {
+        "text": "Learn typing games online",
+        "emoji": "⌨️",
+        "probability": 5
+    },
+    {
+        "text": "Make paper plate masks",
+        "emoji": "🎭",
+        "probability": 5
+    },
+    {
+        "text": "Have an indoor picnic",
+        "emoji": "🧺",
+        "probability": 4
+    },
+    {
+        "text": "Play memory games",
+        "emoji": "🧠",
+        "probability": 7
+    },
+    {
+        "text": "Make salt dough sculptures",
+        "emoji": "🏺",
+        "probability": 4
+    },
+    {
+        "text": "Learn about space",
+        "emoji": "🚀",
+        "probability": 6
+    },
+    {
+        "text": "Create a time capsule",
+        "emoji": "📦",
+        "probability": 3
+    },
+    {
+        "text": "Play charades",
+        "emoji": "🎪",
+        "probability": 6
+    },
+    {
+        "text": "Make homemade playdough",
+        "emoji": "🎨",
+        "probability": 4
+    },
+    {
+        "text": "Learn about dinosaurs",
+        "emoji": "🦕",
+        "probability": 6
+    },
+    {
+        "text": "Create stop-motion videos",
+        "emoji": "📹",
+        "probability": 3
+    },
+    {
+        "text": "Make paper chains",
+        "emoji": "🔗",
+        "probability": 5
+    },
+    {
+        "text": "Practice yoga for kids",
+        "emoji": "🧘",
+        "probability": 5
+    },
+    {
+        "text": "Make ice cream in a bag",
+        "emoji": "🥛",
+        "probability": 2
+    },
+    {
+        "text": "Create a nature journal",
+        "emoji": "🍃",
+        "probability": 6
+    },
+    {
+        "text": "Play Simon Says",
+        "emoji": "👂",
+        "probability": 7
+    },
+    {
+        "text": "Make sock puppets",
+        "emoji": "🧦",
+        "probability": 5
+    },
+    {
+        "text": "Learn about the weather",
+        "emoji": "🌦️",
+        "probability": 6
+    },
+    {
+        "text": "Create a fort with blankets",
+        "emoji": "🏕️",
+        "probability": 6
+    },
+    {
+        "text": "Make homemade butter",
+        "emoji": "🧈",
+        "probability": 4
+    },
+    {
+        "text": "Play hide and seek",
+        "emoji": "👁️",
+        "probability": 7
+    },
+    {
+        "text": "Learn basic coding games",
+        "emoji": "💻",
+        "probability": 4
+    },
+    {
+        "text": "Create recycled art",
+        "emoji": "♻️",
+        "probability": 5
+    },
+    {
+        "text": "Make rainbow with water",
+        "emoji": "🌈",
+        "probability": 5
+    },
+    {
+        "text": "Play dress up",
+        "emoji": "👑",
+        "probability": 6
+    },
+    {
+        "text": "Learn about animals",
+        "emoji": "🐘",
+        "probability": 7
+    },
+    {
+        "text": "Make paper boats",
+        "emoji": "⛵",
+        "probability": 5
+    },
+    {
+        "text": "Practice telling time",
+        "emoji": "⏰",
+        "probability": 7
+    },
+    {
+        "text": "Create sidewalk chalk art",
+        "emoji": "🎨",
+        "probability": 6
+    },
+    {
+        "text": "Make homemade stamps",
+        "emoji": "✉️",
+        "probability": 4
+    },
+    {
+        "text": "Play 20 questions",
+        "emoji": "❓",
+        "probability": 6
+    },
+    {
+        "text": "Learn about different cultures",
+        "emoji": "🌍",
+        "probability": 5
+    },
+    {
+        "text": "Make edible finger paint",
+        "emoji": "🖼️",
+        "probability": 3
+    },
+    {
+        "text": "Practice handwriting",
+        "emoji": "✏️",
+        "probability": 7
+    },
+    {
+        "text": "Create a family tree",
+        "emoji": "🌳",
+        "probability": 4
+    },
+    {
+        "text": "Make bubble solution",
+        "emoji": "🫧",
+        "probability": 5
     }
 ];

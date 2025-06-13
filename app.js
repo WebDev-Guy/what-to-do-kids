@@ -13,15 +13,25 @@ function pickActivity() {
     const randomIndex = Math.floor(Math.random() * weightedList.length);
     const selectedActivity = weightedList[randomIndex];
 
-    // Get the activity display element
+    // Get the activity display elements
     const activityElement = document.getElementById("activity");
+    const emojiElement = document.getElementById("emoji");
 
     // Add a flip animation effect before updating the text
-    activityElement.classList.add("flip");
+    activityElement.classList.add("flip-animate");
+    emojiElement.classList.add("flip-animate");
+
     setTimeout(() => {
-        activityElement.innerText = `${selectedActivity.text} ${selectedActivity.emoji}`; // Update displayed activity
-        activityElement.classList.remove("flip"); // Remove animation class after update
-    }, 300);
+        // Update content at the middle of the animation (when elements are rotated 90 degrees)
+        activityElement.innerText = selectedActivity.text;
+        emojiElement.innerText = selectedActivity.emoji;
+    }, 300); // Update content halfway through the animation
+
+    setTimeout(() => {
+        // Remove animation classes after the animation completes
+        activityElement.classList.remove("flip-animate");
+        emojiElement.classList.remove("flip-animate");
+    }, 600); // Remove classes after full animation duration
 
     // Launch confetti effect when an activity is picked
     launchConfetti();
