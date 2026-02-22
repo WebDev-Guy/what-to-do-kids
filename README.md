@@ -50,14 +50,14 @@ The app now includes over 110 diverse activities organized into several categori
 ## Example Activity List
 ```javascript
 const activities = [
-    { text: "Read a book", emoji: "📖", probability: 8 },
-    { text: "Science experiment", emoji: "🧪", probability: 6 },
-    { text: "Make friendship bracelets", emoji: "💎", probability: 5 },
-    { text: "Go get ice cream", emoji: "🍦", probability: 1 }
+    { text: "Read a book", emoji: "...", probability: 8 },
+    { text: "Science experiment", emoji: "...", probability: 6 },
+    { text: "Make friendship bracelets", emoji: "...", probability: 5 },
+    { text: "Go get ice cream", emoji: "...", probability: 1 }
 ];
 ```
 
-## Future Enhancements
+## Possible Future Enhancements
 - Add sound effects when selecting an activity.
 - Implement a scoreboard or tracking system.
 - Introduce seasonal or themed activities.
@@ -69,13 +69,13 @@ const activities = [
 This project is open-source and free to use for personal or educational purposes.
 
 ## Author
-Created with ❤️ for kids who need fun activity ideas (and parents that need a break)!
+Created for kids who need fun activity ideas (and parents that need a break)!
 
 ## Recent Updates (v2.0)
-- **🎨 Visual Redesign**: Complete UI overhaul with large, centered emojis and improved layout
-- **🔤 Typography**: Added Fredoka One font for enhanced kid-friendly readability
-- **🎯 Interactive Button**: Redesigned from circular to modern rounded rectangle with animated gradient
-- **✨ Enhanced Animations**: Improved flip transitions for both emoji and text elements
-- **♿ Accessibility**: Improved color contrast and WCAG compliance for better readability
-- **📱 Responsive**: Better mobile and desktop experience with optimized sizing
-- **🎭 Activity Expansion**: Added 50+ new activities bringing total to 110+ options
+- **Visual Redesign**: Complete UI overhaul with large, centered emojis and improved layout
+- **Typography**: Added Fredoka One font for enhanced kid-friendly readability
+- **Interactive Button**: Redesigned from circular to modern rounded rectangle with animated gradient
+- **Enhanced Animations**: Improved flip transitions for both emoji and text elements
+- **Accessibility**: Improved color contrast and WCAG compliance for better readability
+- **Responsive**: Better mobile and desktop experience with optimized sizing
+- **Activity Expansion**: Added 50+ new activities bringing total to 110+ options
